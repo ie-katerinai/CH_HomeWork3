@@ -36,8 +36,10 @@ try
     }
 
     Console.WriteLine();
+    Console.WriteLine("Вы ввели следующие координаты точки А");
     PrintArray(arrayA);
     Console.WriteLine();
+    Console.WriteLine("Вы ввели следующие координаты точки B");
     PrintArray(arrayB);
     
     double CalcDist(int[] array1, int[] array2)
@@ -54,6 +56,8 @@ try
 
     double distance = CalcDist(arrayA, arrayB);
 
+    Console.WriteLine();
+    Console.WriteLine("Расстояние между точками равно:");
     Console.WriteLine(distance);
 }
 catch (System.FormatException)
